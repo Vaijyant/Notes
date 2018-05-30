@@ -1,0 +1,202 @@
+body {
+	margin: 0px;
+	width: 1348px;
+	padding: 0px;
+	color: #ffffff;
+	font-family: "Hoefler Text", "Baskerville old face", Garamond,
+		"Times New Roman", serif;
+	font-size: 20px;
+	line-height: 1.5em;
+	background-image: url(images/background.jpg);
+	background-attachment:  fixed;
+}
+
+h1 {
+	font-size: 38px;
+	font-weight: bolder;
+	position: static fixed;
+	text-shadow: 2px 2px black;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 2px 2px black;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#menu {
+
+	display: inline-block;	
+}
+
+ul.navigation {
+	float: left;
+	width: 1100px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul.navigation li {
+	display: inline;
+}
+
+ul.navigation a {
+	padding-top: 10px;
+	float: left;
+	width: 200px;
+	height: 30px;
+	
+}
+
+.menu_01 {
+	background: purple;
+}
+
+.menu_02 {
+	background: maroon;
+}
+
+.menu_03 {
+	background: olive;
+}
+
+.menu_04 {
+	background: teal;
+}
+
+.menu_05 {
+	background: navy;
+	
+}
+
+ul.navigation a:hover {
+	text-decoration: underline;
+	
+}
+
+ul.navigation a.selected {
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+
+p
+{
+	width: 990px;
+		
+}
+p.paragraph {
+	padding-top: 0px;
+	text-indent: 40px;
+	text-align: justify;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	clear: both;
+	padding-left: 172px;
+	padding-bottom: 10px;
+	width: 1176px;
+	
+}
+#content {
+	
+	padding-bottom:80px; 
+	margin: 0 auto;
+	width: 1000px;
+	
+	min-height: 300px;
+	 
+	
+}
+#footer {	
+	clear: both; 
+	width: 950px;
+	padding-top: 10px;
+	margin: 0 auto;
+	
+	 
+}
+
+#social_box {
+	float: left;
+	height: 85px;
+	padding: 0;
+	text-align: right;
+	
+}
+#social_box:HOVER{
+	
+	-ms-transform: translate(0px,-10px); /* IE 9 */
+   	 -webkit-transform: translate(0px,-10px); /* Chrome, Safari, Opera */
+    transform: translate(0px,-10px);
+}
+
+#footer_right {
+	float: right;
+	width: 300px;
+	text-align: right;
+	text-shadow: 2px 2px black;
+}
+a
+{
+text-decoration: none;
+	color: white;
+	font-size: x-large;
+	text-align: center;
+	text-shadow: 2px 2px black;	
+	
+}
+
+#fancy_table{
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+#fancy_table td, #fancy_table th {
+	border: 1px solid white;
+	
+}
+#fancy_table th
+{
+	font-size: x-large;
+	text-shadow: 2px 2px black;	
+	background-color: #000B39;
+}
+td, th
+{
+	text-align: center;
+}
+td a:HOVER
+{
+	text-decoration: line-through;
+}
+hr.styled {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.styled:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;    
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
