@@ -28,7 +28,7 @@
 		<div id="header">
 			<div id="menu">
 				<ul class="navigation">
-					<li><a href="index.jsp" class="menu_01">Home</a></li>
+					<li><a href="../index.jsp" class="menu_01">Home</a></li>
 					<li><a href="Notes" class="menu_02">Notes</a></li>
 					<li><a href="about.jsp" class="selected menu_03">About</a></li>
 					<li><a href="Projects" class="menu_04">Projects</a></li>
