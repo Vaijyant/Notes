@@ -1,4 +1,4 @@
-package com.databasemanage.notes;
+package com.notes.databasemanage;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,9 +6,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import com.notes.model.notes.Notes;
-import com.notes.model.notes.Projects;
-import com.notes.model.notes.Subjects;
+import com.notes.model.Notes;
+import com.notes.model.Projects;
+import com.notes.model.Subjects;
 
 public class DBManager {
 

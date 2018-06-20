@@ -29,9 +29,9 @@
 			<div id="menu">
 				<ul class="navigation">
 					<li><a href="../index.jsp" class="menu_01">Home</a></li>
-					<li><a href="Notes" class="menu_02">Notes</a></li>
+					<li><a href="MyNotes" class="menu_02">Notes</a></li>
 					<li><a href="about.jsp" class="selected menu_03">About</a></li>
-					<li><a href="Projects" class="menu_04">Projects</a></li>
+					<li><a href="MyProjects" class="menu_04">Projects</a></li>
 					<li><a href="contact.jsp" class="menu_05">Contact</a></li>
 				</ul>
 			</div>
@@ -58,9 +58,9 @@
 		<div id="footer">
 			<div id="social_box">
 				<a href="https://www.facebook.com/vaijyant.tomar"><img
-					src="images/facebook.png" alt="facebook" /></a> <a
+                        src="images/facebook.png" alt="facebook" /></a> <a
 					href="http://www.youtube.com/user/Vaijyant"><img
-					src="images/youtube.png" alt="youtube" /></a>
+                    src="images/youtube.png" alt="youtube" /></a>
 			</div>
 			<div id="footer_right">Designed by Vaijyant Tomar</div>
 		</div>

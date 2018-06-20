@@ -1,4 +1,4 @@
-package com.notes.model.servlets.notes;
+package com.notes.servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.databasemanage.notes.DBManager;
+import com.notes.databasemanage.DBManager;
 
 /**
  * Servlet implementation class Projects
@@ -32,7 +32,7 @@ public class Projects extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		ArrayList<com.notes.model.notes.Projects> proList = DBManager.getProjects();
+		ArrayList<com.notes.model.Projects> proList = DBManager.getProjects();
 		request.setAttribute("proList", proList);
         RequestDispatcher view = request.getRequestDispatcher("projects.jsp");
         view.forward(request, response);

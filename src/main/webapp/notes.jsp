@@ -6,15 +6,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="icon" href="images/notes.ico" type="image/x-icon">
-<title>Vaijyant: Projects</title>
+<title>Vaijyant: Notes</title>
 
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="vtjs/jquery.sticky.js"></script>
 <script type="text/javascript" src="vtjs/vtjs.js"></script>
+
+
 <script>
 	$(window).load(function() {
-		$("#header").sticky({ topSpacing: 0, center:true});
+		$("#header").sticky({
+			topSpacing : 0,
+			center : true
+		});
 	});
 </script>
 <link href="vt.css" rel="stylesheet" type="text/css" />
@@ -24,42 +29,57 @@
 <body>
 	<div id="wrapper">
 
-		<h1 align="center">Project</h1>
-		<h2 align="center">this is what I've been doing...</h2>
+		<h1 align="center">Notes</h1>
+		<h2 align="center">for CSE batch of 2011 - 2015</h2>
 		<div id="header">
 			<div id="menu">
 				<ul class="navigation">
 					<li><a href="../index.jsp" class="menu_01">Home</a></li>
-					<li><a href="Notes" class="menu_02">Notes</a></li>
-					<li><a href="about.jsp" class=" menu_03">About</a></li>
-					<li><a href="Projects" class="selected menu_04">Projects</a></li>
+					<li><a href="MyNotes" class="selected menu_02">Notes</a></li>
+					<li><a href="about.jsp" class="menu_03">About</a></li>
+					<li><a href="MyProjects" class="menu_04">Projects</a></li>
 					<li><a href="contact.jsp" class="menu_05">Contact</a></li>
 				</ul>
 			</div>
 		</div>
+
 		<!--header ends
 	content starts  -->
 		<div id="content">
-			<h2 class="paraheading">List Of Projects</h2>
-			<p class="paragraph">This sections presents the list of projects
-				that I've created over last few years. Although, most of them are
-				quite primitive in structure. But they surely did help in building
-				better projects.</p>
+			<p class="paragraph">
+				This section contains all the notes for 7th sem... scroll down to
+				locate the required notes! Also, if you come across any notes send
+				it <a href="contact.jsp"
+					style="text-shadow: none; font-size: inherit;"><i>my way</i></a>.
+				Don't forget to tell your friends too. Keep the sharing going... :D
+			</p>
+			
+				<c:forEach var="subject" items="${subList}">
 
-			<table align="center" id="fancy_table">
-				<tr>
-					<th>S. No.</th>
-					<th>Project Name</th>
-					<th>Project Description</th>
-				</tr>
-				<c:forEach var="pro" items="${proList}">
-					<tr>
-						<td>${pro.projectId}.</td>
-						<td><a href="${pro.projectLink}">${pro.projectName}</a></td>
-						<td>${pro.projectDescription}</td>
-					</tr>
+					<h2 class="paraheading">${subject.subjectName}</h2>
+
+					<table align="center" id="fancy_table">
+
+						<tr>
+							<th>S. No.</th>
+							<th>Notes</th>
+							<th>Dated</th>
+						</tr>
+						<c:forEach var="note" items="${allNotesList}">
+							<c:if test="${note.notesSubject == subject.subjectAbb}">
+								<tr>
+									<td>${note.notesId}.</td>
+									<td><a href="${note.notesLink}">${note.notesDescription}</a></td>
+									<td>${note.notesDate}</td>
+								</tr>
+							</c:if>
+						</c:forEach>
+					</table>
+
+					<hr class="styled">
+
 				</c:forEach>
-			</table>
+			
 		</div>
 		<!--content ends
 	footer starts  -->
@@ -67,9 +87,9 @@
 		<div id="footer">
 			<div id="social_box">
 				<a href="https://www.facebook.com/vaijyant.tomar"><img
-					src="images/facebook.png" alt="facebook" /></a> <a
+                        src="images/facebook.png" alt="facebook" /></a> <a
 					href="http://www.youtube.com/user/Vaijyant"><img
-					src="images/youtube.png" alt="youtube" /></a>
+                    src="images/youtube.png" alt="youtube" /></a>
 			</div>
 			<div id="footer_right">Designed by Vaijyant Tomar</div>
 		</div>

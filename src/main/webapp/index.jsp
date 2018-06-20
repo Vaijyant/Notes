@@ -4,19 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="icon" href="web/images/notes.ico" type="image/x-icon">
+<link rel="icon" href="images/notes.ico" type="image/x-icon">
 <title>Vaijyant Tomar</title>
 
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="web/vtjs/jquery.sticky.js"></script>
-<script type="text/javascript" src="web/vtjs/vtjs.js"></script>
+<script type="text/javascript" src="vtjs/jquery.sticky.js"></script>
+<script type="text/javascript" src="vtjs/vtjs.js"></script>
 <script>
 	$(window).load(function() {
 		$("#header").sticky({ topSpacing: 0, center:true});
 	});
 </script>
-<link href="web/vt.css" rel="stylesheet" type="text/css" />
+<link href="vt.css" rel="stylesheet" type="text/css" />
 </head>
 <div id="clockbox" align="right"
 	style="font-size: large; padding-top: 10px; padding-right: 20px; font-weight: bold; text-shadow: 2px 2px black"></div>
@@ -31,10 +31,10 @@
 			<div id="menu">
 				<ul class="navigation">
 					<li><a href="index.jsp" class="selected menu_01">Home</a></li>
-					<li><a href="Notes" class="menu_02">Notes</a></li>
-					<li><a href="web/about.jsp" class="menu_03">About</a></li>
-					<li><a href="Projects" class="menu_04">Projects</a></li>
-					<li><a href="web/contact.jsp" class="menu_05">Contact</a></li>
+					<li><a href="MyNotes" class="menu_02">Notes</a></li>
+					<li><a href="about.jsp" class="menu_03">About</a></li>
+					<li><a href="MyProjects" class="menu_04">Projects</a></li>
+					<li><a href="contact.jsp" class="menu_05">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,9 +58,9 @@
 		<div id="footer">
 			<div id="social_box">
 				<a href="https://www.facebook.com/vaijyant.tomar"><img
-						src="web/images/facebook.png" alt="facebook" /></a> <a
+						src="images/facebook.png" alt="facebook" /></a> <a
 					href="http://www.youtube.com/user/Vaijyant"><img
-					src="web/images/youtube.png" alt="youtube" /></a>
+					src="images/youtube.png" alt="youtube" /></a>
 			</div>
 			<div id="footer_right">Designed by Vaijyant Tomar</div>
 		</div>

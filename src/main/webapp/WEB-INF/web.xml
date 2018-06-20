@@ -8,18 +8,18 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>Notes</servlet-name>
-        <servlet-class>com.servlets.notes.Notes</servlet-class>
+        <servlet-class>com.notes.servlets.Notes</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Notes</servlet-name>
-        <url-pattern>/Notes</url-pattern>
+        <url-pattern>/MyNotes</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>Projects</servlet-name>
-        <servlet-class>com.servlets.notes.Projects</servlet-class>
+        <servlet-class>com.notes.servlets.Projects</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Projects</servlet-name>
-        <url-pattern>/Projects</url-pattern>
+        <url-pattern>/MyProjects</url-pattern>
     </servlet-mapping>
 </web-app>

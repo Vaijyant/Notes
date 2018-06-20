@@ -1,4 +1,4 @@
-package com.notes.model.servlets.notes;
+package com.notes.servlets;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.databasemanage.notes.DBManager;
+import com.notes.databasemanage.DBManager;
+import com.notes.model.Subjects;
 
 /**
  * Servlet implementation class Notes
@@ -35,13 +36,13 @@ public class Notes extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		ArrayList<com.notes.model.notes.Subjects> subList = DBManager.getSubjects();
+		ArrayList<Subjects> subList = DBManager.getSubjects();
 		
-		ArrayList<com.notes.model.notes.Notes> allNotesList = null;
-		ArrayList<com.notes.model.notes.Notes> subNotesList = null;
+		ArrayList<com.notes.model.Notes> allNotesList = null;
+		ArrayList<com.notes.model.Notes> subNotesList = null;
 
 		if (subList != null) {
-			allNotesList = new ArrayList<com.notes.model.notes.Notes>();
+			allNotesList = new ArrayList<com.notes.model.Notes>();
 
 			for (int i = 0; i < subList.size(); i++) {
 
